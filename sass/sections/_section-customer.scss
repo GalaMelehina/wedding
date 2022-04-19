@@ -1,0 +1,30 @@
+.section-customer {
+    margin-top: 55px;
+    padding-bottom: 120px;
+}
+
+.section-customer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section-customer__img {
+    position: relative;
+    z-index: 9;
+    padding-left: 120px;
+    // box-shadow: -167px -110px 0px -50px #EC5598;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: -10;
+        top: -55px;
+        left: 20px;
+        width: 277px;
+        height: 340px;
+        background-color: #EC5598;
+    }
+}

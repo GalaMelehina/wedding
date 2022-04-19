@@ -1,0 +1,26 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+@import "./blocks/logo";
+@import "./blocks/nav";
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/card";
+@import "./blocks/slider";
+@import "./blocks/form";
+
+// Sections
+@import "./sections/header";
+@import "./sections/section-about-us";
+@import "./sections/section-service";
+@import "./sections/section-video";
+@import "./sections/section-portfolio";
+@import "./sections/section-customer";
+@import "./sections/section-appointment";
+@import "./sections/footer";
+
+// OwlCarousel
+@import "./owl-theme/owl-theme";

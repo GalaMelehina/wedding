@@ -1,0 +1,50 @@
+.section-about-us {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.section-about-us__content {
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+}
+
+.section-about-us__img {
+    max-width: 586px;
+    display: grid;
+    grid-template-columns: 282px 282px;
+    column-gap: 21px;
+    row-gap: 18px;
+    align-items: center;
+    grid-template-areas: "img1 img2" "img1 img3";
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+.section-about-us__desc {
+    width: 490px;
+}
+
+.section-about-us__subtitle {
+    margin-bottom: 10px;
+}
+
+.section-about-us__title {
+    margin-bottom: 25px;
+}
+
+.section-about-us__text {
+    margin-bottom: 45px;
+}
+
+.section-about-us__text p + p {
+    margin-top: 15px;
+}
+
+.section-about-us__image {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}

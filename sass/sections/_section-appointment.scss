@@ -1,0 +1,43 @@
+.section-appointment__img {
+    height: 400px;
+    background-image: url(../../img/appointment/post.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-appointment__content {
+    padding-top: 108px;
+    padding-bottom: 108px;
+    background-color: $accent-color-hover;
+}
+
+.section-appointment__desc {
+    max-width: 784px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-appointment__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section-appointment__text {
+    margin-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section-appointment__button {
+    text-align: center;
+}

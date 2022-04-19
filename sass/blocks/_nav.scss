@@ -1,0 +1,34 @@
+.main-nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav__list {
+    display: flex;
+    // column-gap: 50px;
+}
+
+.main-nav__item {
+    margin-right: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1.5%;
+    text-transform: uppercase;
+    color: #3F3F44;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        color: $accent-color-hover;
+    }
+}
+
+.main-nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

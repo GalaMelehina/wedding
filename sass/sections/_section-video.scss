@@ -1,0 +1,28 @@
+.section-video {
+    padding-bottom: 130px;
+}
+.section-video__img {
+    position: relative;    
+}
+
+.section-video__link {
+    position: absolute;
+    bottom: 75px;
+    right: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    color: #FFFFFF;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        right: 165px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-image: url(../../img/icons/video-button.jpg);
+    }
+}

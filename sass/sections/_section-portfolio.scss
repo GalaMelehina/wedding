@@ -1,0 +1,32 @@
+.section-portfolio {
+    padding-bottom: 130px;
+}
+
+.section-portfolio__title {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.section-portfolio__row {
+    margin-bottom: 65px;
+    display: grid;
+    column-gap: 25px;
+    row-gap: 25px;
+    grid-template-columns: 365px 356px 345px;
+    grid-template-rows: 295px 295px;
+    grid-template-areas: "image-1 image-2 image-3" "image-1 image-4 image-5";
+}
+
+#image-1 {
+    grid-area: image-1;
+}
+
+.section-portfolio__button {
+    text-align: center;
+}
+
+.section-portfolio__img {
+    position: absolute;
+    top: -45px;
+    left: 300px;
+}

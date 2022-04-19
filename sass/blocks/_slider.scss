@@ -1,0 +1,35 @@
+.slider {
+    max-width: 525px;
+    width: 100%;
+    min-width: 0px;
+}
+
+.slider-item__title {
+    margin-bottom: 25px;
+}
+
+.slider-item__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.875;
+    letter-spacing: 1%;
+    color: #20202D;
+}
+
+.slider-item__author {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 1.5%;
+}
+
+.slider-item__client {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 1.5%;
+    color: rgba(53, 52, 73, 0.65);
+}
