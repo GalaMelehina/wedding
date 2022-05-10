@@ -3,18 +3,52 @@
     background-image: url(../../img/appointment/post.jpg);
     background-size: cover;
     background-position: center;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        height: 300px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        height: 200px;
+    }
 }
 
 .section-appointment__content {
     padding-top: 108px;
     padding-bottom: 108px;
     background-color: $accent-color-hover;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+    
+    }
 }
 
 .section-appointment__desc {
     max-width: 784px;
     margin-left: auto;
     margin-right: auto;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .section-appointment__title {
@@ -26,6 +60,21 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        font-size: 40px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        font-size: 36px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
 }
 
 .section-appointment__text {
@@ -36,6 +85,18 @@
     line-height: 1.6;
     text-align: center;
     color: #FFFFFF;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 }
 
 .section-appointment__button {

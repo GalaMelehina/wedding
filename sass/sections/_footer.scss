@@ -2,19 +2,39 @@
 	margin-top: auto; /* sticky footer */
     padding-top: 80px;
     padding-bottom: 142px;
+
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        padding-bottom: 80px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 30px;
 
-.footer__info {
-    width: 273px;
+    /* Mobile */
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .footer__logo {
     margin-bottom: 15px;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .footer__text {
@@ -31,6 +51,18 @@
     display: flex;
     column-gap: 26px;
     margin-bottom: 87px;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        column-gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
 }
 
 .footer__icons a {
@@ -45,15 +77,25 @@
     font-size: 16px;
     line-height: 1.2;
     color: #353449;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 14px;
+        text-align: center;
+    }
 }
 
 .footer__blocks {
     display: flex;
-}
+    justify-content: space-between;
 
-.footer__list:nth-child(2) {
-    margin-left: 190px;
-    margin-right: 160px;
+    /* Mobile */
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        margin-bottom: 50px;
+    }
 }
 
 .footer__list-title {
@@ -62,6 +104,16 @@
     font-size: 24px;
     line-height: 1.3;
     color: #20202D;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        font-size: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .footer__list-item {
@@ -75,4 +127,18 @@
     &:hover {
         color: $accent-color-hover;
     }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+.footer__list ul {
+    /* Mobile */
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+    
 }

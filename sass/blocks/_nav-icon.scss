@@ -1,0 +1,74 @@
+// Ширина и высота линии в иконке
+$lineWidth: 40px;
+$lineHeight: 5px;
+
+// Ширина и высота контейнера для иконки
+$width: $lineWidth;
+$height: $lineHeight * 5;
+$color: $accent-color;
+
+.nav-icon {
+    width: $width;
+    height: $height;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        display: flex;
+        z-index: 99;
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    background-color: $color;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        background-color: $color;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::before {
+        top: -($lineHeight * 2);
+    }
+
+    &::after {
+        top: $lineHeight * 2;
+    }
+}
+
+.nav-icon.active .nav-icon__middle {
+    background-color: transparent;
+
+    &::before, &::after {
+        background-color: #fff;
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+    
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.nav-icon.active {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+}

@@ -24,6 +24,10 @@
     margin-left: auto;
     margin-right: auto;
     
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+    }
 }
 
 .form__item {
@@ -38,7 +42,7 @@
     border: 1px solid $accent-color;
 }
 
-.form__item-text     {
+.form__item-text {
     margin-bottom: 20px;
     border-radius: 4px;
     border: none;

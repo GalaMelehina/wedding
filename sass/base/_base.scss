@@ -52,19 +52,19 @@ section {
         padding: 0;
     }
 
+    /* Tablet big*/
+    @media (max-width: 1139px) {
+        max-width: 900px;
+    }
+
     /* Tablet */
-    @media (max-width: 1199px) {
-        width: 900px;
+    @media (max-width: 899px) {
+        max-width: 768px;
     }
 
     /* Mobile */
-    @media (max-width: 899px) {
-        width: 600px;
-    }
-
-    /* Mobile XS */
-    @media (max-width: 599px) {
-        width: 320px;
+    @media (max-width: 767px) {
+        max-width: 100%;
     }
 }
 

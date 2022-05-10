@@ -14,6 +14,14 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 180px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 12px;
+    }
 }
 
 .button-light {
